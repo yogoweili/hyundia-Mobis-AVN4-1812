@@ -1,0 +1,7 @@
+config TCC_CMMB_SUPPORT
+	tristate "Support to TCC893x CMMB Video Interface"
+	default n
+	depends on ARCH_TCC893X
+	help
+		Support to TCC893x CMMB Video Interface.
+

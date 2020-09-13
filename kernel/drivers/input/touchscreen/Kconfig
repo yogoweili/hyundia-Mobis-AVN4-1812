@@ -1,0 +1,31 @@
+#
+# Touchscreen driver configuration
+#
+menuconfig INPUT_TOUCHSCREEN
+	bool "Touchscreens"
+	help
+	  Say Y here, and a list of supported touchscreens will be displayed.
+	  This option doesn't affect the kernel.
+
+	  If unsure, say Y.
+
+if INPUT_TOUCHSCREEN
+
+config TOUCHSCREEN_ATMEL_MXT_336S_AT
+	tristate "Atmel mXT I2C Touchscreen (MXT_336S_AT)"
+	depends on I2C
+	help
+	  Say Y here if you have Atmel mXT MXT_336S_AT I2C touchscreen,
+	  connected to your system.
+
+config DISASSEMBLED_MONITOR
+	bool "disassembled monitor model"
+	help
+		DAUDIO YG Model
+
+config TOUCHSCREEN_SOLOMON_SSD2532
+	bool "Solomon Touch IC"
+	help
+		Global Daudio Solomon Touch IC
+
+endif

@@ -1,0 +1,41 @@
+#=======================================================================================
+#	FileName    : Makefile
+#	Description : FWDN(FirmWare DownLoader) Makefile
+#=======================================================================================
+#
+#	TCC Board Support Package
+#	Copyright (c) Telechips, Inc.
+#	ALL RIGHTS RESERVED
+#
+#=======================================================================================
+
+
+include $(TOPDIR)/config.mk
+
+LIB	:= libfwdn.a
+
+SOBJS =
+COBJS = fwdn_main.o \
+		fwdn_protocol_v3.o \
+		fwdn_drv_v3.o \
+		fwdn_protocol_v7.o \
+		fwdn_drv_v7.o \
+		fwdn_nand.o \
+		fwupgrade.o \
+		TC_File.o \
+		fwdn_sdmmc.o \
+		fwdn_snor.o
+
+SRCS 	:= $(SOBJS:.o=.S) $(COBJS:.o=.c)
+OBJS 	:= $(SOBJS) $(COBJS)
+
+$(LIB):	.depend $(OBJS)
+	$(AR) $(ARFLAGS) $@ $(OBJS)
+
+
+include $(SRCTREE)/rules.mk
+
+sinclude .depend
+
+
+#=======  end of file ==================================================================

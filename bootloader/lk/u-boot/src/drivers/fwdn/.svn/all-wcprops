@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/sys4/MAGELLAN/!svn/ver/3007/trunk/linux/bootloader/tcboot/drivers/fwdn
+END
+fwdn_nand.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/sys4/MAGELLAN/!svn/ver/1236/trunk/linux/bootloader/tcboot/drivers/fwdn/fwdn_nand.c
+END
+fwdn_snor.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/sys4/MAGELLAN/!svn/ver/3007/trunk/linux/bootloader/tcboot/drivers/fwdn/fwdn_snor.c
+END
+fwdn_drv_v3.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/sys4/MAGELLAN/!svn/ver/1236/trunk/linux/bootloader/tcboot/drivers/fwdn/fwdn_drv_v3.c
+END
+fwdn_sdmmc.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/sys4/MAGELLAN/!svn/ver/2596/trunk/linux/bootloader/tcboot/drivers/fwdn/fwdn_sdmmc.c
+END
+fwdn_main.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/sys4/MAGELLAN/!svn/ver/553/trunk/linux/bootloader/tcboot/drivers/fwdn/fwdn_main.c
+END
+fwupgrade.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/sys4/MAGELLAN/!svn/ver/1236/trunk/linux/bootloader/tcboot/drivers/fwdn/fwupgrade.c
+END
+TC_File.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/sys4/MAGELLAN/!svn/ver/1236/trunk/linux/bootloader/tcboot/drivers/fwdn/TC_File.c
+END
+fwdn_drv_v7.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/sys4/MAGELLAN/!svn/ver/2697/trunk/linux/bootloader/tcboot/drivers/fwdn/fwdn_drv_v7.c
+END
+SNOR_Loader_TCC89XX.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/sys4/MAGELLAN/!svn/ver/3007/trunk/linux/bootloader/tcboot/drivers/fwdn/SNOR_Loader_TCC89XX.h
+END
+fwdn_protocol_v3.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/sys4/MAGELLAN/!svn/ver/553/trunk/linux/bootloader/tcboot/drivers/fwdn/fwdn_protocol_v3.c
+END
+fwdn_protocol_v7.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/sys4/MAGELLAN/!svn/ver/2697/trunk/linux/bootloader/tcboot/drivers/fwdn/fwdn_protocol_v7.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/sys4/MAGELLAN/!svn/ver/3007/trunk/linux/bootloader/tcboot/drivers/fwdn/Makefile
+END

@@ -1,0 +1,7 @@
+config USB_DIO
+	tristate "DIO Support"
+        depends on (USB)
+	help
+	  Say Y or M here if your system has XXX.
+
+

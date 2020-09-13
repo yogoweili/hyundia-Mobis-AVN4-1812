@@ -1,0 +1,72 @@
+#ifndef __DAUDIO_IE___
+#define __DAUDIO_IE__
+
+#include <daudio_settings.h>
+
+#ifndef ARRAY_SIZE
+#define ARRAY_SIZE(x) (sizeof(x) / sizeof((x)[0]))
+#endif
+
+typedef enum _daudio_ie_cmds
+{
+	SET_BRIGHTNESS				= 10,
+	SET_CONTRAST				= 11,
+	SET_HUE						= 12,
+	SET_SATURATION				= 13,
+	SET_CAM_BRIGHTNESS			= 14,
+	SET_CAM_CONTRAST			= 15,
+	SET_CAM_HUE					= 16,
+	SET_CAM_SATURATION			= 17,
+	SET_TCC_BRIGHTNESS			= 18,
+	SET_TCC_CONTRAST			= 19,
+	SET_TCC_HUE					= 20,
+	SET_TCC_SATURATION			= 21,
+	SET_TCC_VIDEO_BRIGHTNESS	= 22,
+	SET_TCC_VIDEO_CONTRAST		= 23,
+	SET_TCC_VIDEO_GAMMA			= 24,
+	SET_TCC_VIDEO_SATURATION	= 25,
+	SET_TCC_VIDEO_BRIGHTNESS2	= 26,
+	SET_TCC_VIDEO_CONTRAST2		= 27,
+	SET_TCC_VIDEO_GAMMA2		= 28,
+	SET_TCC_VIDEO_SATURATION2	= 29,
+
+	GET_BRIGHTNESS				= 40,
+	GET_CONTRAST				= 41,
+	GET_HUE						= 42,
+	GET_SATURATION				= 43,
+	GET_CAM_BRIGHTNESS			= 44,
+	GET_CAM_CONTRAST			= 45,
+	GET_CAM_HUE					= 46,
+	GET_CAM_SATURATION			= 47,
+	GET_TCC_BRIGHTNESS			= 48,
+	GET_TCC_CONTRAST			= 49,
+	GET_TCC_HUE					= 50,
+	GET_TCC_SATURATION			= 51,
+	GET_TCC_VIDEO_BRIGHTNESS	= 52,
+	GET_TCC_VIDEO_CONTRAST		= 53,
+	GET_TCC_VIDEO_GAMMA			= 54,
+	GET_TCC_VIDEO_SATURATION	= 55,
+	GET_TCC_VIDEO_BRIGHTNESS2	= 56,
+	GET_TCC_VIDEO_CONTRAST2		= 57,
+	GET_TCC_VIDEO_GAMMA2		= 58,
+	GET_TCC_VIDEO_SATURATION2	= 59,
+} daudio_ie_cmds;
+
+#define SUCCESS_				1
+#define SUCCESS_I2C				2
+#define SUCCESS_WRITE_SETTING	3
+
+#define FAIL					300
+#define FAIL_I2C				301
+#define FAIL_READ_SETTING		302
+#define FAIL_WRITE_SETTING		303
+#define FAIL_NO_SETTING			304
+#define FAIL_UNMATCH_SETTING	305
+#define FAIL_OVERFLOW_LIMIT_ARG	306
+#define FAIL_NO_COMMNAD			307
+
+void init_tcc_ie(int lcdc_num, struct ie_setting_info *info);
+void init_tw8836_ie(struct ie_setting_info *info);
+void init_tw9912_ie(struct ie_setting_info *info);
+
+#endif

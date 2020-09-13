@@ -1,0 +1,28 @@
+--- drivers/gpu/mali/mali/Makefile
++++ drivers/gpu/mali/mali/Makefile
+@@ -14,7 +14,7 @@
+ OSKOS=linux
+ FILES_PREFIX=
+ 
+-MALI_RELEASE_NAME = r3p2-01rel2
++MALI_RELEASE_NAME = r3p2-01rel4
+ 
+ ARCH = arm
+ BUILD = release
+@@ -108,7 +108,7 @@
+ 	linux/mali_kernel_linux.c \
+ 	common/mali_kernel_descriptor_mapping.c \
+ 	common/mali_session.c \
+-	common/mali_device_pause_resume.c \
++	linux/mali_device_pause_resume.c \
+ 	common/mali_kernel_vsync.c \
+ 	linux/mali_ukk_vsync.c \
+ 	linux/mali_kernel_sysfs.c \
+@@ -135,6 +135,7 @@
+ 	common/mali_user_settings_db.c \
+ 	common/mali_kernel_utilization.c \
+ 	common/mali_l2_cache.c \
++	common/mali_pm_domain.c \
+ 	$(OSKOS)/mali_osk_pm.c \
+ 	linux/mali_pmu_power_up_down.c \
+ 	$(MALI_PLATFORM_FILE) \

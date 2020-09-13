@@ -1,0 +1,49 @@
+##########daudio_na_defconfig##########
+CONFIG_TCC_MEM_2048MB=y
+CONFIG_DDR3_MT41K512M8=y
+
+
+##########daudio_cn_defconfig##########
+CONFIG_TCC_MEM_1024MB=y
+CONFIG_DDR3_H5TQ4G83AFR_PBC=y
+CONFIG_USB_ACM=y
+CONFIG_USB_SERIAL=y
+CONFIG_USB_SERIAL_GENERIC=y
+CONFIG_USB_SERIAL_PIO_LGIT_MODEM=y
+# CMMB
+CONFIG_CMMB_EARLY_RESET=y
+# Virtual UART
+CONFIG_DUP_UART=y
+
+
+##########daudio_kr_defconfig##########
+CONFIG_TCC_MEM_2048MB=y
+CONFIG_DDR3_MT41K512M8=y
+CONFIG_USB_LGIT_GOBIUSBNET=y
+CONFIG_USB_ACM=y
+CONFIG_USB_SERIAL=y
+CONFIG_USB_SERIAL_GENERIC=y
+CONFIG_USB_SERIAL_KT_LGIT_MODEM=y
+# Virtual Driver
+CONFIG_DUP_UART=y
+# DMB
+CONFIG_DVB_CORE=y
+
+
+##########daudio_YG_defconfig##########
+CONFIG_TCC_MEM_2048MB=y
+CONFIG_DDR3_MT41K512M8=y
+CONFIG_DISASSEMBLED_MONITOR=y
+
+
+~                                                                                                                                     
+~                                                                                                                                     
+~                                                                                                                                     
+~                                                                                                                                     
+~                                                                                                                                     
+~                                                                                                                                     
+~                                                                                                                                     
+~                                                                                                                                     
+~                                                                                                                                     
+~                                                                                                                                     
+~                             

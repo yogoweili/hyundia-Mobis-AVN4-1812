@@ -1,0 +1,7 @@
+config TCC_CM3_USE
+	tristate "Use to TCC893x Cortex-M3 Sub-core"
+	default y
+	depends on ARCH_TCC893X
+	help
+		CM3 Sub-core driver support for TCC893x.
+

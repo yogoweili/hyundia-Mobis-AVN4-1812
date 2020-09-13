@@ -1,0 +1,15 @@
+#ifndef _AXP192_H_
+#define _AXP192_H_
+
+typedef enum {
+	AXP192_ID_DCDC1 = 0,
+	AXP192_ID_DCDC2,
+	AXP192_ID_DCDC3,
+	AXP192_ID_LDO1,
+	AXP192_ID_LDO2,
+	AXP192_ID_LDO3,
+	AXP192_ID_LDO4,
+	AXP192_MAX
+} axp192_src_id;
+
+#endif
